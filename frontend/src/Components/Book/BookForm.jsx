@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router'
+import { Link } from 'react-router-dom'
 
 function BookForm({ initialValues, onSubmit, mode }) {
     const [form, setForm] = useState({
+        id: "",
         title: "",
         author: "",
         publishedYear: "",
@@ -64,7 +65,9 @@ function BookForm({ initialValues, onSubmit, mode }) {
                 <button type="submit" className="btn btn-primary">
                     {mode === "edit" ? "Update Book" : "Add Book"}
                 </button>
-                <button className="btn btn-warning ml-2 mb-4"><Link to={"/books"}>Back</Link></button>
+                <Link to="/books" className="btn btn-warning ml-2 mb-4">
+                    Back
+                </Link>
             </div>
         </form>
     )

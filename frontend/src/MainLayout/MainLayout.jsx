@@ -26,7 +26,7 @@ function MainLayout() {
                 {/* Manage Book */}
                 <Route path="books" element={<BookList />} />
                 <Route path="books/add" element={<AddBook />} />
-                <Route path="books/edit" element={<EditBook />} />
+                <Route path="/books/edit/:id" element={<EditBook />} />
 
                 {/* Not found routes */}
                 <Route path="*" element={<Error />} />
