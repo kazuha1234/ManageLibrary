@@ -1,25 +1,15 @@
-package com.trinhpokemon.managelibrary.entity;
+package com.trinhpokemon.managelibrary.dto.request.User.request;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.trinhpokemon.managelibrary.enums.Gender;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import lombok.*;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.util.Date;
 
-@Entity
 @Getter
 @Setter
-@NoArgsConstructor
-@AllArgsConstructor
-@Builder
-public class User {
-    @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
-    private String id;
+public class UserUpdateRequest {
     private String name;
     @JsonFormat(pattern = "yyyy-MM-dd")
     private Date dob;

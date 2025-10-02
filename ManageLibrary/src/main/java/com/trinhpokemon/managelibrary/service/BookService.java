@@ -1,7 +1,7 @@
 package com.trinhpokemon.managelibrary.service;
 
-import com.trinhpokemon.managelibrary.dto.request.BookCreationRequest;
-import com.trinhpokemon.managelibrary.dto.request.BookUpdateRequest;
+import com.trinhpokemon.managelibrary.dto.request.Book.request.BookCreationRequest;
+import com.trinhpokemon.managelibrary.dto.request.Book.request.BookUpdateRequest;
 import com.trinhpokemon.managelibrary.entity.Book;
 import com.trinhpokemon.managelibrary.repository.BookRepository;
 import org.springframework.data.domain.Page;
